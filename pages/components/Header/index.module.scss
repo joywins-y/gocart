@@ -1,0 +1,78 @@
+.header_container {
+  width: 1180px;
+  max-width: 1180px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  :global {
+    .left-box {
+      height: 49px;
+      display: flex;
+      align-items: center;
+      .address {
+        height: 100%;
+        .ant-btn {
+          height: 100%;
+          background: #e40046;
+          border: none;
+          color: #fff;
+          border-radius: 0;
+        }
+      }
+    }
+
+    .right-box {
+      display: flex;
+      align-items: center;
+
+      > div {
+        margin: 0 10px;
+        display: inline-flex;
+        align-items: center;
+
+        .ant-icon svg{
+          font-size: 20px;
+          color: #000;
+        }
+      }
+      span.num {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        background-color: #e40046;
+        color: #fff;
+        padding: 2px 8px;
+        border-radius: 50%;
+        margin-left: 5px;
+      }
+      .userInfo {
+        display: flex;
+        align-items: center;
+        margin-right: 0;
+        .avatar{
+          display: inline-flex;
+          margin: 0 8px;
+        }
+      }
+    }
+  }
+}
+
+.menu_drawer {
+  font-family: "Poppins";
+  :global {
+    ul.ant-menu.ant-menu-inline {
+      border: none;
+    }
+    .ant-menu-sub.ant-menu-inline {
+      background: #fff;
+    }
+
+    .ant-drawer-body > ul.ant-menu > li {
+      border-bottom: 1px solid #f6f6f6;
+      box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.06);
+    }
+  }
+}
